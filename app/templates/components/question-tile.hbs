@@ -1,8 +1,9 @@
-
-<h2>NAME OF AUTHOR:{{#link-to 'infor-mation' question.id}}{{question.author}}{{/link-to}}</h2>
+<div class="row mainanswer">
+<h2 class="text">NAME OF AUTHOR:{{#link-to 'infor-mation' question.id}}{{question.author}}{{/link-to}}</h2>
 <h2>TOPIC:{{question.topic}}</h2>
 <p>QUESTION:{{question.query}}</p>
 <h2>ADD IMAGE FOR BETTER CLARITY</h2>
 <img src={{question.image}}>
 <button {{action 'delete' question}}>QUERY ANSWERED</button>
 {{query-update question=question changeQuery="changeQuery"}}
+</div>
