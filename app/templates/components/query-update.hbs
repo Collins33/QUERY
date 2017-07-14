@@ -19,9 +19,9 @@
         <label for="image">Image of question</label>
         {{input value=image id="image"  placeholder=question.author}}
       </div>
-      <button {{action 'changeQuery' question}}>Submit question</button>
+      <button {{action 'changeQuery' question}} class="btn">Submit question</button>
     </form>
   </div>
 {{else}}
-<button {{action 'updateQuery'}}>update your question</button>
+<button {{action 'updateQuery'}} class="btn">update your question</button>
 {{/if}}

@@ -1,9 +1,13 @@
 <div class="row mainanswer">
+  <div class="col-md-6">
 <h2 class="text">NAME OF AUTHOR:{{#link-to 'infor-mation' question.id}}{{question.author}}{{/link-to}}</h2>
 <h2>TOPIC:{{question.topic}}</h2>
 <p>QUESTION:{{question.query}}</p>
+{{query-update question=question changeQuery="changeQuery"}}
+<button {{action 'delete' question}} class="btn">QUERY ANSWERED</button>
+</div>
+<div class="col-md-6">
 <h2>ADD IMAGE FOR BETTER CLARITY</h2>
 <img src={{question.image}}>
-<button {{action 'delete' question}}>QUERY ANSWERED</button>
-{{query-update question=question changeQuery="changeQuery"}}
+</div>
 </div>
