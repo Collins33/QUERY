@@ -1,7 +1,8 @@
 
 <h2>NAME OF AUTHOR:{{question.author}}</h2>
 <h2>TOPIC:{{question.topic}}</h2>
-<p>QUESTION:{{question.question}}</p>
+<p>QUESTION:{{question.query}}</p>
 <h2>ADD IMAGE FOR BETTER CLARITY</h2>
 <img src={{question.image}}>
 <button {{action 'delete' question}}>QUERY ANSWERED</button>
+{{query-update question=question changeQuery="changeQuery"}}
