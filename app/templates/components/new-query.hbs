@@ -1,0 +1,29 @@
+{{#if queryForm}}
+<p>ADD YOUR QUERY</p>
+<div>
+    <form>
+      <div class="form-group">
+        <label for="author">Name of author</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="type">Topic</label>
+        {{input value=topic id="topic"}}
+      </div>
+
+      <div class="form-group">
+        <label for="question">Enter the question</label>
+        {{input value=question id="question"}}
+      </div>
+
+      <div class="form-group">
+        <label for="bedrooms">Image of question</label>
+        {{input value=image id="image"}}
+      </div>
+      <button {{action 'saveQuery'}}>Submit question</button>
+    </form>
+  </div>
+{{else}}
+<button {{action 'showQueryForm'}}>toggleQueryForm</button>
+{{/if}}
