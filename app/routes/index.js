@@ -22,4 +22,10 @@ export default Ember.Route.extend({
   model(){
     return this.store.findAll('question');
   },
+  actions:{
+    delete(question){
+      question.destroyRecord();
+      this.transitionTo('index');
+    }
+  }
 });
