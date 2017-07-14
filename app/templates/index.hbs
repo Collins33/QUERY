@@ -1,10 +1,6 @@
 <h2>ASK.COM</h2>
 {{#each model as |question|}}
-<h2>NAME OF AUTHOR:{{question.author}}</h2>
-<h2>TOPIC:{{question.topic}}</h2>
-<p>QUESTION:{{question.question}}</p>
-<h2>ADD IMAGE FOR BETTER CLARITY</h2>
-<img src={{question.image}}>
+{{question-tile question=question}}
 {{/each}}
 
 
