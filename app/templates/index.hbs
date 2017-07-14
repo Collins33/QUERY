@@ -1,1 +1,12 @@
-{{outlet}}
+<h2>ASK.COM</h2>
+{{#each model as |question|}}
+<h2>{{question.author}}</h2>
+<h2>{{question.topic}}</h2>
+<p>{{question.question}}</p>
+<img src={{question.image}}>
+{{/each}}
+
+
+
+{{#link-to 'aboute'}}about us{{/link-to}}
+{{#link-to 'contact'}}contact us{{/link-to}}
