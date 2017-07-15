@@ -1,4 +1,4 @@
-<h2>ASK.COM</h2>
+<h2>QUERYZ</h2>
 {{new-query question=question saveQuery="saveQuery"}}
 {{#each model.questions as |question|}}
 {{question-tile question=question delete="delete" changeQuery="changeQuery"}}
@@ -7,5 +7,6 @@
 <p>NAME:{{answer.name}}</p>
 <p>SOLUTION:{{answer.solution}}</p>
 {{/each}}
+{{new-answer answer=answer giveAnswer='giveAnswer'}}
 {{#link-to 'aboute'}}about us{{/link-to}}
 {{#link-to 'contact'}}contact us{{/link-to}}

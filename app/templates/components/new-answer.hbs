@@ -1,0 +1,19 @@
+{{#if answerForm}}
+<h2>GIVE AN ANSWER</h2>
+<div>
+<form>
+  <div class="form-group">
+    <label for="name">ENTER YOUR NAME</label>
+    {{input value=name id="name" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="solution">ENTER YOUR ANSWER</label>
+    {{input value=solution id="solution" class="form-control"}}
+  </div>
+  <button {{action 'giveAnswer'}}class="btn">SUBMIT YOUR ANSWER</button>
+
+</form>
+</div>
+{{else}}
+<button {{action 'toggleAnswer'}}>toggle answer form</button>
+{{/if}}
