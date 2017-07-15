@@ -5,4 +5,5 @@ export default DS.Model.extend({
   topic: DS.attr(),
   query: DS.attr(),
   image: DS.attr(),
+  answers: DS.hasMany('answer', { async:true })
 });
