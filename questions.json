@@ -1,12 +1,20 @@
-{ "questions":[{
-  "author": "collins njau",
-  "topic": "gaming",
-  "query": "when is battlefield 3 coming out",
-  "image": "http://hd.wallpaperswide.com/thumbs/battlefield_4_recon_sniper-t1.jpg"
-  },{
+{
+  "questions": [{
+    "author": "collins njau",
+    "topic": "gaming",
+    "query": "when is battlefield 3 coming out",
+    "image": "http://hd.wallpaperswide.com/thumbs/battlefield_4_recon_sniper-t1.jpg"
+  }, {
     "author": "indigo blue",
     "topic": "finance",
     "query": "when is the value of bitcoin",
     "image": "https://cdn.pixabay.com/photo/2014/10/21/07/08/bitcoin-495995__340.jpg"
+  }],
+  "answers": [{
+    "name": "black panther",
+    "solution": "in later in the year"
+  }, {
+    "name": "Mr worldwide",
+    "solution": "its currently trading at five thousand dollars"
   }]
 }

@@ -1,10 +1,11 @@
 <h2>ASK.COM</h2>
 {{new-query question=question saveQuery="saveQuery"}}
-{{#each model as |question|}}
+{{#each model.questions as |question|}}
 {{question-tile question=question delete="delete" changeQuery="changeQuery"}}
 {{/each}}
-
-
-
+{{#each model.answers as |answer|}}
+<p>NAME:{{answer.name}}</p>
+<p>SOLUTION:{{answer.solution}}</p>
+{{/each}}
 {{#link-to 'aboute'}}about us{{/link-to}}
 {{#link-to 'contact'}}contact us{{/link-to}}
