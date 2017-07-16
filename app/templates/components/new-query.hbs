@@ -21,9 +21,9 @@
         <label for="bedrooms">Image of question</label>
         {{input value=image id="image"}}
       </div>
-      <button {{action 'saveQuery'}} class="btn">Submit question</button>
+      <button {{action 'saveQuery'}} class="btn btn-primary">Submit question</button>
     </form>
   </div>
 {{else}}
-<button {{action 'showQueryForm'}} class="btn">toggleQueryForm</button>
+<button {{action 'showQueryForm'}} class="btn btn-info">toggleQueryForm</button>
 {{/if}}

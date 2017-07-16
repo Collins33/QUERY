@@ -10,10 +10,10 @@
     <label for="solution">ENTER YOUR ANSWER</label>
     {{input value=solution id="solution" class="form-control"}}
   </div>
-  <button {{action 'giveAnswer'}}class="btn">SUBMIT YOUR ANSWER</button>
+  <button {{action 'giveAnswer'}}class="btn btn-primary">SUBMIT YOUR ANSWER</button>
 
 </form>
 </div>
 {{else}}
-<button {{action 'toggleAnswer'}}>toggle answer form</button>
+<button {{action 'toggleAnswer'}} class="btn btn-info">toggle answer form</button>
 {{/if}}
