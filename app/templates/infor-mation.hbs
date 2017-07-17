@@ -1,7 +1,10 @@
 <h2>MORE INFORMATION ABOUT: {{model.author}} {{model.topic}}</h2>
 {{query-detail question=model}}
 {{new-answer question=model giveAnswer='giveAnswer'}}
+<h2>ANSWERS</h2>
 {{#each model.answers as |answer|}}
+<div class="well">
 <p>NAME:{{answer.name}}</p>
 <p>SOLUTION:{{answer.solution}}</p>
+</div>
 {{/each}}

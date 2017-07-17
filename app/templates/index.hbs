@@ -3,10 +3,15 @@
 {{#each model.questions as |question|}}
 {{question-tile question=question delete="delete" changeQuery="changeQuery"}}
 {{/each}}
+<h2>ANSWERS FROM OUR COMMUNITY OF CONTRIBUTORS</h2>
+
 {{#each model.answers as |answer|}}
+<div class="well">
 <p>NAME:{{answer.name}}</p>
 <p>SOLUTION:{{answer.solution}}</p>
+</div>
 {{/each}}
+
 
 {{#link-to 'aboute'}}about us{{/link-to}}
 {{#link-to 'contact'}}contact us{{/link-to}}
