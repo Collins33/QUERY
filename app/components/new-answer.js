@@ -10,9 +10,10 @@ export default Ember.Component.extend({
       var params={
         name: this.get('name'),
         solution: this.get('solution'),
+        question: this.get('question')
       };
       this.set('answerForm',false);
-      this.sendAction('giveAnswer',params)
+      this.sendAction('giveAnswer',params);
     }
   }
 });
