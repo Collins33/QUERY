@@ -27,6 +27,12 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit my app at [http://localhost:4200](http://localhost:4200).
 
+### Technologies used
+* html
+* css
+* ember
+
+
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
@@ -40,3 +46,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
+
+License
+----
+
+MIT
+
+
+**Free Software**
