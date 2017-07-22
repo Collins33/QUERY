@@ -2,7 +2,7 @@
 COLLINS NJAU MURU
 collinsnjau39@gmail.com
 
-# questions-platform
+# queriez
 
 This is a platform that allows users to submit questions and others users can
 submit their answers.
